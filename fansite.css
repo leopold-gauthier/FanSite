@@ -1,0 +1,181 @@
+*::before::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#news{
+    background-image: url(./asset/bkbody1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: 0% 20% 0% 0%;
+}
+#container{
+    width: 75%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: stretch;
+}
+.logo{
+    width: 20vw;
+    padding: 4% 0% 0% 0%;
+    opacity: 0.7;
+}
+
+header{
+    margin: 5% 0% 0.2% 0% ;
+    padding: 2% 0%;
+    background: rgba(22, 22, 22, 0.8);
+}
+.navheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.aheader:hover{
+    color: rgba(180, 100, 43, 1);
+    text-decoration: none;
+}
+.aheader{
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(245, 176, 47, 0.742);
+    font-size: 1.1rem;
+}
+main{
+    padding: 2% 10%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(22, 22, 22, 0.8);
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+.h1main{
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+}
+.h2main{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.h3main{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-size: 1.1rem;
+     margin: 5% 0% 0% 0%; 
+     text-align: left;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.imgmain{
+    width: 50%
+}
+.pmain{
+    /* text-align: center; */
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    margin: 2% 0%;
+    width: 50%;
+}
+footer{
+    margin: 2% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#imgfooter{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imgfooter{
+    margin: 0% 1%;
+}
+.pfooter{
+    text-align: center;
+    margin: 2% 10%;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(245, 176, 47, 0.742);
+    font-size: 0.7rem;
+}
+.navfooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#afooter{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.afooter{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(245, 176, 47, 0.742);
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 2% 1% 0% 1%;
+}
+i{
+    font-size: 2rem;
+}
+
+iframe{
+    width: 30%;
+}
+
+
+/* TOURNAMENT TABLE GRID */
+#tournamenttable {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 1rem;
+    display: grid;
+    align-self: stretch;
+    align-items: stretch;
+    justify-items: center;
+    grid-template-columns: repeat(11, auto);
+    grid-template-rows: repeat(25, auto);
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 1000px; */
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    }
+.ltournament{
+    width: 15px;
+}
+
+.tier { grid-area: 1 / 1 / 26 / 2; }
+/* .logo { grid-area: 1 / 3 / 26 / 3; } */
+.tournament { grid-area: 1 / 2 / 26 / 8; }
+.date { grid-area: 1 / 8 / 26 / 10; }
+.prize { grid-area: 1 / 10 / 26 / 11; }
+.place { grid-area: 1 / 11 / 26 / 12; }
+.location { grid-area: 1 / 12 / 26 / 16; }
+
