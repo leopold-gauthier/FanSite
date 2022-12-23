@@ -44,14 +44,31 @@ header{
     align-items: center;
     justify-content: space-evenly;
 }
-.aheader:hover{
-    color: rgba(180, 100, 43, 1);
+.aheader:hover::before{
+    transform: scale(1);
+}
+.aheader::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(245, 176, 47, 0.742);
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
     text-decoration: none;
 }
 .aheader{
+    position: relative;
+    background-image: linear-gradient(to top, rgba(245, 176, 47, 0.742),rgb(255, 227, 101));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
     font-weight: bolder;
     font-family: 'Roboto', sans-serif;
-    color: rgba(245, 176, 47, 0.742);
+   
     font-size: 1.1rem;
 }
 main{
