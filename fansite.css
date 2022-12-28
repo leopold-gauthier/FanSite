@@ -11,7 +11,6 @@
   /* Ascenseur */
   body::-webkit-scrollbar-thumb {
     border-radius: 15%;
-    cursor: url(./asset/icons8-blue-pointer-24.png)4 12, crosshair;
     background: rgba(245, 176, 47);
   }
   /* Bouton */
@@ -26,7 +25,7 @@
 
 /* Cursor */
 html{
-    cursor: url(./asset/icons8-blue-pointer-24.png)4 12, pointer; 
+    cursor: url(./asset/icons8-blue-pointer-24.png)0 0, pointer; 
 }
 /* //////////////////////////////////////////////////////////////// */
 
@@ -36,7 +35,7 @@ html{
     box-sizing: border-box;
 }
 #news{
-    cursor: url(./asset/icons8-blue-pointer-24.png)4 12, pointer;
+    cursor: url(./asset/icons8-blue-pointer-24.png)0 0, pointer;
     scrollbar-color: rgba(245, 176, 47) rgb(0, 0, 0);
     border: 2px rgba(245, 176, 47, 0.742) solid;
     overflow: auto;
